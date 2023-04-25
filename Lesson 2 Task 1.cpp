@@ -20,8 +20,7 @@ int main(int argc, char** argv)
 {
 	setlocale(LC_ALL, "rus");
 	int month = 0;
-	months m = static_cast<months>(month);
-
+	
 	do {
 		std::cout << "¬ведите номер мес€ца: ";
 		std::cin >> month;
@@ -34,6 +33,8 @@ int main(int argc, char** argv)
 		{
 			std::cout << "Ќеправильный номер!" << std::endl;
 		}
+
+		months m = static_cast<months>(month);
 		switch (m) {
 		case months::январь:
 			std::cout << "январь" << std::endl;
